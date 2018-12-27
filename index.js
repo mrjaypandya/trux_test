@@ -43,7 +43,7 @@ server.post('/get-details', (req, res) => {
             return res.json({
                 speech: dataToSend,
                 displayText: dataToSend,
-                source: 'get-movie-details'
+                source: 'get-details'
             });
         });
     }, (error) => {
