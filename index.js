@@ -15,9 +15,9 @@ server.use(bodyParser.json());
 
 server.post('/get-details', (req, res) => {
 
-    const dst = req.body.result.parameters.Destination;
-    const src = req.body.result.parameters.Source;
-    const vh_type = req.body.result.parameters.Vehicle;
+    const dst = req.body.queryResult.parameters.Destination;
+    const src = req.body.queryResult.parameters.Source;
+    const vh_type = req.body.queryResult.parameters.Vehicle;
 
     var options = {method: 'GET',
         url: 'http://52.221.70.49:5032/api/v1/lanesearch',
